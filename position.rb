@@ -6,7 +6,7 @@ class Position
   BOARD = 1..8
 
   def initialize(x, y)
-    y = Y_AXES.find_index(y.downcase) if y.is_a? String
+    y = Y_AXES.find_index(y) if y.is_a? String
 
     @x = x
     @y = y
